@@ -1,0 +1,41 @@
+#bbs-container {
+  width: 60%;
+  min-height: 30rem;
+  margin: 2rem auto;
+  .cut-header {
+    margin: 2rem 0;
+    border-bottom: 1px solid #33a3a2;
+    padding-left: 1rem;
+    h3 {
+      font-weight: 500;
+      color: #33a3a2;
+    }
+  }
+  .words-container {
+    padding: 1rem;
+    article.word-article {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      color: #765E1E;
+    }
+    p {
+      line-height: 1.5;
+      letter-spacing: 1px;
+      color: #333;
+    }
+    footer {
+      margin-bottom: 0.5rem;
+      text-align: right;
+      color: #765E1E;
+    }
+  }
+}
+@media only screen and (max-width: 760px) {
+  #bbs-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+#stick-container {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  right: 3rem;
+  bottom: 3rem;
+  i.icon-stick {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #999;
+  }
+  i.icon-stick:hover {
+    color: #33a3a2;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #stick-container {
+    display: none;
+  }
+}

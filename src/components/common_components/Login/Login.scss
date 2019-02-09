@@ -1,0 +1,90 @@
+#login {
+  .login-container {
+    position: fixed;
+    width: 25rem;
+    height: 20rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 5px;
+    z-index: 20;
+  }
+  .login-prompty {
+    height: 2rem;
+    color: red;
+    text-align: center;
+  }
+  .login-close {
+    display: flex;
+    justify-content: flex-end;
+    height: 2.5rem;
+    i {
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      font-size: 1.1rem;
+      text-align: center;
+      transition: background 0.3s;
+      border-top-right-radius: 5px;
+      cursor: pointer;
+    }
+    i:hover {
+      background: #eee;
+    }
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    .login-input-container {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      i {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        left: 2.5rem;
+        top: 0.4rem;
+      }
+    }
+    .login-username, .login-password {
+      box-sizing: border-box;
+      width: 80%;
+      height: 2rem;
+      padding: 0 1rem 0 2.5rem;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+    }
+    .login-submit {
+      width: 80%;
+      height: 2rem;
+      border: none;
+      outline: none;
+      background: #ddd;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .login-submit:active {
+      background: #ccc;
+    }
+  }
+  .third-party-logins {
+    position: absolute;
+    width: 80%;
+    height: 4rem;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    i {
+      color: #000;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
+}

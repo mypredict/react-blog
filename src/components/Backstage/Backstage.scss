@@ -1,0 +1,84 @@
+#backstage-container {
+  min-height: 40rem;
+  aside.subnav-container {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    i {
+      position: absolute;
+      width: 2rem;
+      height: 2.5rem;
+      top: 2rem;
+      left: -4rem;
+      border: 1rem solid #fff;
+      border-radius: 50%;
+      background: #33a3a2;
+      opacity: 0.3;
+    }
+    nav {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 12rem;
+      padding: 1rem 1rem 1rem 2rem;
+      top: 0;
+      left: 0;
+      border-right: 1px solid #ccc;
+      background: #fff;
+      box-sizing: border-box;
+      .subnav {
+        display: flex;
+        flex-direction: column;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        overflow: hidden;
+        -webkit-tap-highlight-color: rgba(255,255,255,0);
+      }
+      .threenav {
+        margin-left: 1rem;
+        line-height: 2;
+        font-size: 1.1rem;
+      }
+    }
+    a {
+      color: #33a3a2;
+    }
+    a:hover {
+      color: #C10AE2;
+    }
+    a.active {
+      color: #C10AE2;
+    }
+  }
+  .backstage-content {
+    min-height: 40rem;
+    padding-left: 12rem;
+  }
+  @media only screen and (max-width: 760px) {
+    aside.subnav-container {
+      position: fixed;
+      top: 4rem;
+      z-index: 20;
+      i {
+        left: -2rem;
+      }
+      nav {
+        top: -4rem;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+        .subnav {
+          font-size: 1.5rem;
+        }
+        .threenav {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .backstage-content {
+      padding-left: 0;
+    }
+  }
+}

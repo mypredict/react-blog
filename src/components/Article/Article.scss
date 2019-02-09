@@ -1,0 +1,98 @@
+#article-container {
+  .article-show {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #aaa;
+    header {
+      .article-lable {
+        color: #555;
+      }
+      i.icon-chakan {
+        margin-left: 3rem;
+      }
+      h2 {
+        font-weight: 500;
+        color: #66471E;
+      }
+    }
+    .article-content {
+      min-height: 10rem;
+      margin: 3rem 0;
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 500;
+        color: #66471E;
+      }
+      p {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        line-height: 1.7;
+        color: #333;
+      }
+      img {
+        max-width: 100%;
+        margin: 2rem 0;
+      }
+      pre {
+        box-sizing: border-box;
+        overflow: auto;
+        padding: 0 1rem;
+        line-height: 1.4;
+        font-size: 1rem;
+        background: #F6F5F6;
+      }
+      code {
+        color: #555;
+      }
+      a {
+        text-deraction: none;
+        font-size: 1.1rem;
+      }
+      ul, ol {
+        padding-left: 1.5rem;
+        li {
+          font-size: 1.1rem;
+          letter-spacing: 1px;
+          line-height: 1.7;
+          color: #333;
+        }
+      }
+      span {
+        display: inline-block;
+        margin: 1rem 0 0;
+        font-size: 1.2rem;
+        color: red;
+      }
+    }
+    footer {
+      height: 2.3rem;
+      text-align: right;
+      button {
+        width: 4rem;
+        min-width: 4rem;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        background: #fff;
+        color: #999;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        user-select: none;
+        transition: color 0.2s, border 0.2s;
+        -webkit-tap-highlight-color: rgba(255,255,255,0);
+      }
+      button:hover {
+        color: red;
+        border: 1px solid red;
+      }
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .article-show {
+      width: 100%;
+    }
+  }
+}

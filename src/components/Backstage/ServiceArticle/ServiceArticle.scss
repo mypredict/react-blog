@@ -1,0 +1,45 @@
+#service-article-container {
+  .article-header {
+    display: flex;
+    position: sticky;
+    height: 3rem;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+    background: #F6F6F6;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: flex;
+      height: 3rem;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  span {
+    height: 100%;
+    line-height: 3rem;
+    text-align: center;
+    color: #555;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+  }
+  .update, .delete {
+    cursor: pointer;
+  }
+  .update:hover, .delete:hover {
+    color: red;
+  }
+  .delete1 {
+    border-right: none;
+  }
+  .min {
+    flex: 1;
+  }
+  .times {
+    flex: 2;
+  }
+  .title {
+    flex: 3;
+  }
+}

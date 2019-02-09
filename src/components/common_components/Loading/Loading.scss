@@ -1,0 +1,40 @@
+#loading {
+  width: 100%;
+  height: 100%;
+  color: #777;
+  span {
+    display: none;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    li {
+      width: 5px;
+      height: 5px;
+      margin: 0 2px;
+      border-radius: 50%;
+      background: #aaa;
+      transform: translateY(0);
+      animation: loadings 0.5s linear infinite;
+    }
+    .li1, .li3, .li5 {
+      animation-delay: 0;
+    }
+    .li2, .li4 {
+      animation-delay: -0.2s;
+    }
+    @keyframes loadings {
+      0% {transform: translateY(-5px);}
+      50% {transform: translateY(10px);}
+      100% {transform: translateY(-5px);}
+    }
+  }
+}
